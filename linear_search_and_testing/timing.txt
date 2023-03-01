@@ -1,0 +1,9 @@
+Worst case search time for 10000000th size array is: 0.44309186935424805s
+Worst case search time for 20000000th size array is: 1.073835849761963s
+Worst case search time for 30000000th size array is: 1.6085925102233887s
+Worst case search time for 40000000th size array is: 2.4143424034118652s
+Worst case search time for 50000000th size array is: 3.018528461456299s
+Worst case search time for 60000000th size array is: 3.5196757316589355s
+Worst case search time for 70000000th size array is: 4.383322715759277s
+Worst case search time for 80000000th size array is: 9.613042116165161s
+Worst case search time for 90000000th size array is: 14.516842603683472s
