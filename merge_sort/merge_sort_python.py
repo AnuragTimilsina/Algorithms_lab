@@ -36,6 +36,7 @@ def mergeSort(arr):
             j += 1
             k += 1
 
+    return arr
+
 arr = [10, 9, 2, 4, 6, 13]
-mergeSort(arr)
-print(arr)
+print(mergeSort(arr))
