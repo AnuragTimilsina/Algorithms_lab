@@ -1,0 +1,9 @@
+Worst case sort time for 100000th size array is: 0.41953539848327637s
+Worst case sort time for 200000th size array is: 0.8912780284881592s
+Worst case sort time for 300000th size array is: 1.3833065032958984s
+Worst case sort time for 400000th size array is: 1.880617380142212s
+Worst case sort time for 500000th size array is: 2.4848594665527344s
+Worst case sort time for 600000th size array is: 2.940885066986084s
+Worst case sort time for 700000th size array is: 3.4338126182556152s
+Worst case sort time for 800000th size array is: 3.956421375274658s
+Worst case sort time for 900000th size array is: 4.4747889041900635s
