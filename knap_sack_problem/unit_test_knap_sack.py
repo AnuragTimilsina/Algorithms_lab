@@ -2,6 +2,7 @@ import unittest
 from bruteForce_0_1_knapsack import brute_force_knap_sack
 from greedy_fractional_knapsack import fractionalKnapsackGreedy, Item
 from dynamic_0_1_knapsack import knapSackDynamic
+from bruteForce_fractional_knapsack import fractionalKnapsackBruteforce
 
 
 class bruteforce_knapsack_test(unittest.TestCase):
@@ -61,34 +62,33 @@ class greedy_fractional_knapsack_test(unittest.TestCase):
         self.assertEqual(max_val, result)
 
 
-class dynamic_knapsack_test(unittest.TestCase):
+class bruteforce_fractional_knapsack_test(unittest.TestCase):
 
     def test_normal(self):
-        val = [60, 100, 120]
-        wt = [10, 20, 30]
-        W = 50
-        n = len(val)
-        max_val = knapSackDynamic(W, wt, val, n)
-        result = 220
+        values = [60, 100, 20]
+        weights = [10, 20, 30]
+        bag_size = 40
+        max_val = fractionalKnapsackBruteforce(values, weights, bag_size)
+        result = 160
 
         self.assertEqual(max_val, result)
 
     def test_zero_bag_capacity(self):
-        val = [60, 100, 120]
-        wt = [10, 20, 30]
-        W = 0
-        n = len(val)
-        max_val = knapSackDynamic(W, wt, val, n)
+        values = [60, 100, 20]
+        weights = [10, 20, 30]
+        bag_size = 0
+        max_val = fractionalKnapsackBruteforce(values, weights, bag_size)
         result = 0
 
         self.assertEqual(max_val, result)
 
+        self.assertEqual(max_val, result)
+
     def test_big_weights(self):
-        val = [60, 100, 120]
-        wt = [1000, 2000, 300]
-        W = 50
-        n = len(val)
-        max_val = knapSackDynamic(W, wt, val, n)
+        values = [60, 100, 20]
+        weights = [100, 200, 300]
+        bag_size = 40
+        max_val = fractionalKnapsackBruteforce(values, weights, bag_size)
         result = 0
 
         self.assertEqual(max_val, result)
