@@ -22,7 +22,7 @@ def partition(A, p, r):
     return i+1
 
 if __name__ == '__main__':
-    A = [1, 2, 5, 7, 8, 10]
+    A = [5, 2, 7, 8, 10, 1]
     p = 0
     r = len(A) - 1
     print("array length: ", r)

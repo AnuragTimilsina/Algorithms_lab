@@ -9,17 +9,17 @@ def mergeSort(A, p, r):
 def merge(A, p, q, r):
     n1 = q - p + 1
     n2 = r - q
-    L = [i for i in range(n1+1)]
-    R = [i for i in range(n2+1)]
-    for i in range(0, n1):
-        L[i] = A[p + i -1]
-    for j in range(0, n2):
-        R[j] = A[q+j]
+    L = [0 for i in range(n1+1)]
+    R = [0 for i in range(n2+1)]
+    for i in range(n1):
+        L[i] = A[p + i]
+    for j in range(n2):
+        R[j] = A[q+j+1]
     L[n1] = 10000000
     R[n2] = 10000000
-    i = 1
-    j = 1
-    for k in range(p, r): 
+    i = 0
+    j = 0
+    for k in range(p, r+1): 
         if L[i] <= R[j]:
             A[k] = L[i]
             i = i + 1
@@ -29,7 +29,7 @@ def merge(A, p, q, r):
 
 
 if __name__ == '__main__':
-    A = [1, 2, 5, 7, 8, 10]
+    A = [5, 2, 7, 8, 10, 1]
     p = 0
     r = len(A) - 1
     print("array length: ", r)
