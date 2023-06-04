@@ -4,6 +4,7 @@ from calculate_graph_nx import (
     calculate_graph_degree,
     calculate_graph_density,
     calculate_graph_diameter)
+from degree_distribution import degree_distribution_plot
 
 
 # Create an empty graph
@@ -28,7 +29,7 @@ if __name__ == '__main__':
     calculate_graph_density(graph)
     calculate_graph_diameter(graph)
     calculate_clustering_coefficient(graph)
-
+    degree_distribution_plot(graph)
 
 
 
