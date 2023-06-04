@@ -1,10 +1,9 @@
 import networkx as nx
-from calculate_graph_nx import (
+from task2.graph1.calculate_graph_nx import (
     calculate_clustering_coefficient, 
     calculate_graph_degree,
     calculate_graph_density,
     calculate_graph_diameter)
-from plot_graph_nx import plot_graph
 
 
 # Create an empty graph
@@ -43,8 +42,6 @@ if __name__ == '__main__':
         avg_clustering_coeff = 0
 
     print("Average Clustering Coefficient (Library):", avg_clustering_coeff)
-
-    plot_graph(graph)
 
 
 
